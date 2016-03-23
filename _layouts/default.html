@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="{{ site.author }}" />
+    <title>{% if page.path == 'index.html' %}{{ site.name }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless %}{{ page.title }}{% endif %}</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css" />
+    <link rel="stylesheet" href="/media/css/highlight.css" />
+    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>{{ page.title }}</h1>
+        </header>
+        <nav>
+        <span><a title="List/列表" class="" href="/">List/列表</a></span>
+        <span><a title="Cat./分类" class="" href="/categories/">Cat./分类</a></span>
+        <span><a title="Tags/标签" class="" href="/tags/">Tags/标签</a></span>
+        <span><a title="Links/链接" class="" href="/links/">Links/链接</a></span>
+        <span><a title="Guest/留言" class="" href="/guestbook/">Guest/留言</a></span>
+        <span><a title="About/关于" class="" href="/about/">About/关于</a></span>
+        <span><a title="RSS" class="" href="/feed/" target="_blank">RSS</a></span>
+        <span><a title="Misc/个人" class="" href="/personal_misc/">Misc/个人</a></span>
+        </nav>
+        <article class="content">
+        {{ content }}
+        </article>
+      </div>
+
+    <footer>
+        <p><small>
+            <a href="http://github.com/{{ site.github }}/NET/new/gh-pages/_posts" target="_blank" title="Write-New-Blog">Po</a>wer<a href="http://github.com/{{ site.github }}/NET/edit/gh-pages/{{ page.path }}" target="_blank" title="Edit-Page">ed</a> by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> @ <a href="http://github.com/{{ site.github }}/NET" target="_blank" title="Project-Homepage">GitHub</a>
+             | <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/cn/" target="_blank" title="License">©</a> 2004 - {{site.time | date:"%Y"}} <a href="/about/">{{ site.author }}</a>
+{% if site.beian %}
+             | <a href="http://www.miibeian.gov.cn" target="_blank">{{ site.beian }}</a>
+{% endif %}
+{% if site.cnzz %}
+             | <script src="http://s85.cnzz.com/stat.php?id={{ site.cnzz }}"></script>
+{% endif %}
+         </small></p>
+    </footer>
+
+    </div>
+  </body>
+</html>
