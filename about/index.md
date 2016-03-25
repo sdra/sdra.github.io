@@ -1,6 +1,6 @@
 ---
 title: SDRA's tech blog - About/关于
-layout: page
+layout: post
 comments: no
 ---
 
