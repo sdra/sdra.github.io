@@ -1,6 +1,6 @@
 ---
-title: Jiao Xianjun (BH1RXH)'s tech blog - Categories/分类
-layout: page
+title: SDRA's tech blog - Categories/分类
+layout: post
 ---
 
 <div id='tag_cloud'>
