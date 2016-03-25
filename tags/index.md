@@ -1,6 +1,6 @@
 ---
 title: Jiao Xianjun (BH1RXH)'s tech blog - Tags/标签
-layout: page
+layout: post
 ---
 
 <div id='tag_cloud'>
